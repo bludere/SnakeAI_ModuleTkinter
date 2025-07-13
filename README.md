@@ -11,7 +11,8 @@
 
 A practical Deep Q-Learning agent trained to play Snake on a custom Tkinter grid.  
 Built to test the exact match between state representation, action logic, and reward shaping.  
-Model architecture adapted from Patrick Loeber’s Snake AI [![patrickloeber/snake-ai-pytorch](https://img.shields.io/badge/Source-patrickloeber%2Fsnake--ai--pytorch-blue?logo=github)](https://github.com/patrickloeber/snake-ai-pytorch/blob/main/game.py).
+Model architecture adapted from Patrick Loeber’s Snake AI
+[![patrickloeber/snake-ai-pytorch](https://img.shields.io/badge/Source-patrickloeber%2Fsnake--ai--pytorch-blue?logo=github)](https://github.com/patrickloeber/snake-ai-pytorch/blob/main/game.py).
 
 ---
 
