@@ -11,17 +11,16 @@
 
 A practical Deep Q-Learning agent trained to play Snake on a custom Tkinter grid.  
 Built to test the exact match between state representation, action logic, and reward shaping.  
-Model architecture adapted from Patrick Loeber’s open-source Snake AI for clarity and reproducibility.
+Model architecture adapted from Patrick Loeber’s Snake AI [![patrickloeber/snake-ai-pytorch](https://img.shields.io/badge/Source-patrickloeber%2Fsnake--ai--pytorch-blue?logo=github)](https://github.com/patrickloeber/snake-ai-pytorch/blob/main/game.py).
 
 ---
 
 ## ⚙️ Features
 
-- **Tkinter Environment** — full game loop, grid rendering, and directional bindings in pure Tkinter.
-- **Detailed State Vector** — 13 inputs: relative danger, absolute heading, absolute food position, normalized distances.
-- **3-Layer Feedforward Model** — input → two hidden layers with ReLU → output: [straight, right, left].
+- **Tkinter Environment** — full game loop, grid rendering, play_step func. and directional bindings in pure Tkinter.
+- **Detailed State Vector** — 11 inputs: relative danger, absolute heading, absolute food position.
+- **3-Layer Feedforward Model** — input → hidden layer with ReLU → output: [straight, right, left].
 - **Shaped Rewards** — heavier penalty for self-collisions, step penalty to avoid stalling, bonus for closing distance to the apple.
-- **Replay Buffer** — deque with capacity up to 100,000 steps to stabilize learning.
 
 ---
 
@@ -43,7 +42,7 @@ git clone https://github.com/yourusername/snake-dqn-tkinter.git
 cd snake-dqn-tkinter
 
 # Install requirements
-pip install torch numpy
+pip install -r requirements.txt
 
 # Train the agent
 python agent.py
