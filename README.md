@@ -52,6 +52,11 @@ python agent.py
 # Run the AI in a visual Tkinter window
 python test_visual.py
 ```
+
+## 🎥 Demo
+
+![Demo of Snake AI](./snake-demo.gif)
+
 ## 📄 License
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the “Software”), to deal
